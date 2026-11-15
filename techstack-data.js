@@ -1,13 +1,24 @@
+
 const techStack = [
   {
     name: "Excel",
-    category: "Data Analysis",
+    category: "Data Processing",
     icon: "assets/img/icons/excel.svg"
   },
   {
     name: "SQL",
-    category: "Database",
+    category: "Database Query Language",
     icon: "assets/img/icons/sql.svg"
+  },
+  {
+    name: "SQL Server",
+    category: "Database",
+    icon: "assets/img/icons/sqlserver.png"
+  },
+  {
+    name: "BigQuery",
+    category: "Cloud Data Warehouse",
+    icon: "assets/img/icons/google_cloud.png"
   },
   {
     name: "Python",
@@ -16,8 +27,13 @@ const techStack = [
   },
   {
     name: "Pandas",
-    category: "Data Manipulation",
+    category: "Data Processing",
     icon: "assets/img/icons/pandas.svg"
+  },
+  {
+    name: "NumPy",
+    category: "Data Processing",
+    icon: "assets/img/icons/numpy.png"
   },
   {
     name: "Power BI",
@@ -25,14 +41,9 @@ const techStack = [
     icon: "assets/img/icons/powerbi.svg"
   },
   {
-    name: "Tableau",
+    name: "Looker Studio",
     category: "Data Visualization",
-    icon: "assets/img/icons/tableau.svg"
-  },
-  {
-    name: "NumPy",
-    category: "Numerical Computing",
-    icon: "assets/img/icons/numpy.png"
+    icon: "assets/img/icons/looker.svg"
   },
   {
     name: "JavaScript",
