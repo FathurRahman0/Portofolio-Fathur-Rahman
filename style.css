@@ -1130,6 +1130,22 @@ video { max-width: 100%; }
   color: var(--text-muted);
 }
 
+/* KHUSUS KARTU KIMIA FARMA */
+.proyek-deck-card.kimia-farma-card .deck-card-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.proyek-deck-card.kimia-farma-card > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .deck-card-tags {
   display: flex;
   flex-wrap: wrap;
