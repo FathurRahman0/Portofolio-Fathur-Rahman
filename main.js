@@ -40,9 +40,14 @@ function renderDeck() {
 
     const card = document.createElement('button');
 
-    card.className =
-      'proyek-deck-card focus-ring' +
-      (Math.abs(offset) > 2 ? ' is-hidden' : '');
+    const isKimiaFarma = /kimia\s*farma/i.test(
+      `${p.title || ''} ${p.cardTitle || ''}`
+    );
+
+  card.className =
+  'proyek-deck-card focus-ring' +
+  (Math.abs(offset) > 2 ? ' is-hidden' : '') +
+  (isKimiaFarma ? ' kimia-farma-card' : '');
 
     card.setAttribute(
       'aria-label',
@@ -134,7 +139,7 @@ renderDeck();
 function renderRecentProject() {
   const container = document.getElementById("project-recent-content");
 
-  if (!container || !projects.length) return;
+  if (!container || typeof projects === "undefined" || !projects.length) return;
 
   const latestProject = projects[projects.length - 1];
 
